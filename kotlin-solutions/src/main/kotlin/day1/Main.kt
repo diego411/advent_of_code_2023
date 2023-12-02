@@ -1,11 +1,8 @@
 package day1
 
 import java.io.File
-import java.util.*
 
-fun main(args: Array<String>) {
-    val path = System.getProperty("user.dir")
-    println("Working Directory = $path")
+fun main() {
     var sum = 0
     File("./src/main/kotlin/day1/input.txt").forEachLine {
         val (first, last) = getFirstAndLastNumber(it)
